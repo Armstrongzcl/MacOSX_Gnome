@@ -1031,15 +1031,22 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 /* TOP BAR */
 #panel {
-  background-color: rgba(255,255,255,0.75);
+  background-color: rgba(255,255,255,0.45);
+ transition-duration: 250ms;
   font-size: 9.5pt;
   height: 2em;
   text-shadow: none;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.1), 0 8px 20px rgba(0,0,0,0.35);
+  box-shadow: 0 0px 1px rgba(0,0,0,0.1), 0 0px 0px rgba(0,0,0,0.35);
   background-gradient-direction: none;
   /*border-radius: 0 0 6px 6px;*/
 }
-
+#panel.solid {
+  background-color: rgba(255,255,255,1);
+  transition-duration: 250ms;
+  /*box-shadow: 0 0px 1px rgba(0,0,0,0.1), 0 0px 0px rgba(0,0,0,0.35);*/
+  background-gradient-direction: none;
+  /*border-radius: 0 0 6px 6px;*/
+}
 #panel:overview, #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
   background-color: rgba(255,255,255,0.75);
   box-shadow: 0 8px 18px rgba(0,0,0,0.1), 0 8px 20px rgba(0,0,0,0.35);
@@ -1175,15 +1182,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   -minimum-hpadding: 0px;
   spacing: 0px;
   padding: 0px;
-  icon-size: 1.28571em;
+  icon-size: 1.32571em;
 }
 
 #panel #panelRight .panel-button {
-  -natural-hpadding: 6px;
+  -natural-hpadding: 4px;
 }
 
 #panel #panelRight .panel-status-indicators-box .system-status-icon {
-  padding: 0 5px 0 5px;
+  padding: 0 2px 0 2px;
 }
 
 #panel #panelLeft .panel-button, #panel #panelCenter .panel-button {
